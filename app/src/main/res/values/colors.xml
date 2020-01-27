@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#014a7f</color>
+    <color name="colorPrimaryDark">#014a7f</color>
+    <color name="colorAccent">#014a7f</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorSignOutBtn">#ff4636</color>
+    <color name="colorFacebook">#3B5998</color>
+    <color name="backgroundimage">#ff99cc00</color>
+    <color name="darker_grey">#aaa</color>
+
+    <color name="red">#F03925</color>
+    <color name="username_profile_color">#2454b7</color>
+    <color name="email_profile_color">#b6b6b6</color>
+    <color name="profile_background_color">#f9f9f9</color>
+    <color name="color_signout">#ff4636</color>
+    <color name="sign_button_color">#e59408</color>
+    <color name="forget_password_color">#ffbf11</color>
 </resources>

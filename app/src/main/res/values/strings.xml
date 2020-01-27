@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">issueDetection</string>
+    <string name="image_icon">Image Icon</string>
+    <string name="signIn">تسجيل الدخول</string>
+    <string name="forget_your_password">هل نسيت كلمة السر؟</string>
+    <string name="or">أو</string>
+    <string name="google"> بواسطه جوجل</string>
+    <string name="create_new_account">لست عضوا لدينا؟ سجل جديد</string>
+    <string name="show">اظهار</string>
+    <string name="register">تسجيل</string>
+    <string name="forget_password">هل نسيت كلمة السر ؟</string>
+    <string name="reset_password">اعادة تعيين كلمة السر</string>
 </resources>
