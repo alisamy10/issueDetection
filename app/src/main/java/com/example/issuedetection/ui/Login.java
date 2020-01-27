@@ -27,6 +27,7 @@ public class Login extends BaseActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(Login.this,SignUp.class);
                 startActivity(intent);
+                //here
 
 
             }
