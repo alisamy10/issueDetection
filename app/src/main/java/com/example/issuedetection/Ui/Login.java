@@ -1,21 +1,15 @@
 package com.example.issuedetection.ui;
 
-
-import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.issuedetection.Base.BaseActivity;
 import com.example.issuedetection.R;
 
-public class SignUp extends AppCompatActivity {
+public class Login extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        Intent intent=new Intent(this,MainActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_login);
     }
 }
