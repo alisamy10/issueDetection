@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignUp"
+    android:background="@drawable/signin_background"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo" />
+
+        </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/username_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="7dp"
+                android:hint="اسم المستخدم"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/profile_background_color"
+                android:textColorHint="@color/profile_background_color"
+                android:backgroundTint="@color/profile_background_color"
+                />
+
+            <EditText
+                android:id="@+id/signUp_email_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="7dp"
+                android:hint="البريد الإلكتروني"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/profile_background_color"
+                android:textColorHint="@color/profile_background_color"
+                android:backgroundTint="@color/profile_background_color"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="7dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/profile_background_color">
+
+                <EditText
+                    android:id="@+id/signUp_password_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كلمة السر"
+                    android:gravity="center|right"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/profile_background_color"
+                    android:textColorHint="@color/profile_background_color"
+                    android:backgroundTint="@color/profile_background_color"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="7dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/profile_background_color"
+                >
+
+                <EditText
+                    android:id="@+id/signUp_confirm_password_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="تأكيد كلمة السر"
+                    android:gravity="center|right"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/profile_background_color"
+                    android:textColorHint="@color/profile_background_color"
+                    android:backgroundTint="@color/profile_background_color"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/signUp_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/signin_btn_background"                            android:text="تسجيل جديد"
+
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/login_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عضو بالفعل! تسجيل الدخول الان "
+                android:gravity="center"
+                android:textColor="@color/profile_background_color"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
