@@ -1,7 +1,7 @@
 package com.example.issuedetection.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.issuedetection.Base.BaseActivity;
@@ -13,5 +13,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        startActivity(new Intent(this,SaveIssueActivity.class));
     }
 }
