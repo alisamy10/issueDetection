@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/signin_background"
     tools:context=".ui.Login"
-    android:gravity="center"
-    >
+    android:gravity="center">
 
 
 

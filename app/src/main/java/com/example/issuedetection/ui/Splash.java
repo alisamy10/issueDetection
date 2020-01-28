@@ -4,7 +4,6 @@ package com.example.issuedetection.ui;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
 import com.example.issuedetection.Base.BaseActivity;
 import com.example.issuedetection.R;
 
@@ -18,7 +17,7 @@ public class Splash extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Splash.this, com.example.issuedetection.ui.Login.class);
+                Intent intent = new Intent(Splash.this,MainActivity.class);
                 startActivity(intent);
                 finish();
             }

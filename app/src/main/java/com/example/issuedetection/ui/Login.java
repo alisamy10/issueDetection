@@ -1,7 +1,6 @@
 package com.example.issuedetection.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.issuedetection.Base.BaseActivity;
@@ -13,5 +12,6 @@ public class Login extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
     }
 }

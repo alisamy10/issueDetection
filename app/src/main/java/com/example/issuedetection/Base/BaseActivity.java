@@ -3,11 +3,13 @@ package com.example.issuedetection.Base;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,10 @@ import com.example.issuedetection.R;
 public class BaseActivity extends AppCompatActivity {
 
 
+    public void showToast(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 
+    }
 
     public AlertDialog showMessage(String message, String posActionName){
         AlertDialog.Builder builder =new AlertDialog.Builder(this);
@@ -88,6 +93,25 @@ public AlertDialog showMessage(int message, int posActionName,
         builder.setNegativeButton(negativeText,onNegativeClick );
         builder.setCancelable(isCancelable);
         return builder.show();
+    }
+
+    ProgressDialog dialog;
+    public void showProgressDialog(String message){
+        dialog =new ProgressDialog(this);
+        dialog.setMessage(message);
+        dialog.setCancelable(false);
+        dialog.show();
+    }
+    public void showProgressDialog(String title,String message , boolean isCancelable){
+        dialog =new ProgressDialog(this);
+        dialog.setTitle(title);
+        dialog.setMessage(message);
+        dialog.setCancelable(isCancelable);
+        dialog.show();
+    }
+    public void hideProgressDialog(){
+        if(dialog!=null&&dialog.isShowing())
+            dialog.dismiss();
     }
 
 
