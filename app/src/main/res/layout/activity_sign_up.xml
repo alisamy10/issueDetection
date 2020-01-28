@@ -120,18 +120,7 @@
                 app:passwordToggleTint="@color/profile_background_color"
                 >
 
-                <EditText
-                    android:id="@+id/signUp_confirm_password_editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="تأكيد كلمة السر"
-                    android:gravity="center|right"
-                    android:padding="10dp"
-                    android:inputType="textPassword"
-                    android:textColor="@color/profile_background_color"
-                    android:textColorHint="@color/profile_background_color"
-                    android:backgroundTint="@color/profile_background_color"
-                    />
+
 
             </com.google.android.material.textfield.TextInputLayout>
 

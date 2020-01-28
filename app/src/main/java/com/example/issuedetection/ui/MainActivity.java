@@ -79,6 +79,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
             myLocationProvider = new MyLocationProvider(this);
         // lw msh 3awaz a listen 3la update ab3t null
         location = myLocationProvider.getCurrentLocation(this);
+        ///kjjk
     }
 
     @Override
