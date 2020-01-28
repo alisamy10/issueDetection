@@ -119,7 +119,8 @@
                 android:padding="10sp"
                 android:text="@string/create_new_account"
                 android:textColor="@color/profile_background_color"
-                android:textSize="11.7sp" />
+                android:textSize="11.7sp"
+                android:onClick="goSignUp"/>
 
 
         </LinearLayout>

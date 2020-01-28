@@ -41,7 +41,7 @@ public class IssueAlramReciever extends Service {
                 .setContentIntent(pendingIntent)
                 .build();
 
-        startForeground(1, notification);
+        //startForeground(1, notification);
 
         //do heavy work on a background thread
         //stopSelf();
