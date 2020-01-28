@@ -1,10 +1,13 @@
-package com.example.issuedetection;
+package com.example.issuedetection.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.issuedetection.Base.BaseActivity;
+import com.example.issuedetection.R;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
