@@ -21,6 +21,7 @@ public class BaseActivity extends AppCompatActivity {
 
 
 
+
     public AlertDialog showMessage(String message, String posActionName){
         AlertDialog.Builder builder =new AlertDialog.Builder(this);
         builder.setMessage(message);
